@@ -5,6 +5,7 @@ content introduction, concept explanation, exercises, simulations, media, applic
 to build complete, interactive sessions from a plain-text content file – without writing LiaScript or code.
 
 - [`Templates/`](Templates/) – templates, conventions, `assemble.py` (skeleton / build), `validate.py`, render check
+- **Website:** https://ovgu-vet-teched.github.io/liascript-slide-templates/ (all templates open directly in LiaScript)
 - [`Demo_Session/`](Demo_Session/) – a 14-slide demo session on Otto von Guericke's Magdeburg hemispheres, built only
   from [`Demo_Session.content.txt`](Demo_Session/Demo_Session.content.txt)
 

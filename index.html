@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LiaScript Slide Templates</title>
+<style>
+  :root { --bg:#f6f8fa; --card:#ffffff; --text:#1f2933; --muted:#5f6b7a; --accent:#0b7285; --border:#d9e0e7; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#11161c; --card:#1a222b; --text:#e6edf3; --muted:#9aa7b4; --accent:#3bc9db; --border:#2c3742; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif; }
+  header, main, footer { max-width:1100px; margin:0 auto; padding:0 16px; }
+  header { padding-top:48px; padding-bottom:16px; }
+  h1 { font-size:2rem; margin:0 0 .5rem; }
+  header p { color:var(--muted); max-width:760px; margin:.25rem 0; }
+  .hero { display:flex; flex-wrap:wrap; gap:12px; margin:20px 0 8px; }
+  nav { display:flex; flex-wrap:wrap; gap:8px; margin:20px 0 0; }
+  nav a { font-size:.9rem; color:var(--accent); text-decoration:none; border:1px solid var(--border); border-radius:999px; padding:3px 12px; background:var(--card); }
+  section { margin:40px 0; }
+  h2 { font-size:1.35rem; margin:0 0 14px; }
+  h2 span { display:block; font-size:.95rem; font-weight:400; color:var(--muted); }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:14px; }
+  .card { background:var(--card); border:1px solid var(--border); border-radius:10px; padding:16px; display:flex; flex-direction:column; }
+  .card h3 { margin:0 0 6px; font-size:1rem; }
+  .what { margin:0 0 8px; }
+  .use { margin:0 0 14px; color:var(--muted); font-size:.92rem; flex:1; }
+  .links { display:flex; align-items:center; gap:14px; }
+  .btn { background:var(--accent); color:#fff; text-decoration:none; padding:7px 14px; border-radius:6px; font-weight:600; font-size:.92rem; }
+  .btn.big { padding:10px 18px; font-size:1rem; }
+  .btn.ghost { background:transparent; color:var(--accent); border:1px solid var(--accent); }
+  @media (prefers-color-scheme: dark) { .btn { color:#0b1a1f; } .btn.ghost { color:var(--accent); } }
+  .src { color:var(--accent); font-size:.92rem; }
+  .demo { background:var(--card); border:1px solid var(--border); border-left:4px solid var(--accent); border-radius:10px; padding:18px; }
+  .demo h2 { margin-bottom:6px; }
+  code { background:var(--border); padding:1px 5px; border-radius:4px; font-size:.9em; }
+  footer { color:var(--muted); font-size:.85rem; padding-bottom:40px; }
+  footer a { color:var(--accent); }
+</style>
+</head>
+<body>
+<header>
+  <h1>LiaScript Slide Templates</h1>
+  <p>27 render-tested slide templates in 9 families for interactive teaching with <a href="https://liascript.github.io" style="color:var(--accent)">LiaScript</a>.
+     Each link opens the template directly in LiaScript: the first page is its fill guide, the following pages show the slides.</p>
+  <p>Build a whole session from a plain-text content file with <code>assemble.py</code> – no LiaScript or code editing needed.</p>
+  <div class="hero">
+    <a class="btn big" href="https://liascript.github.io/course/?https://raw.githubusercontent.com/OVGU-VET-TechEd/liascript-slide-templates/main/Demo_Session/Demo_Session.md" target="_blank" rel="noopener">Open the demo session</a>
+    <a class="btn big ghost" href="https://github.com/OVGU-VET-TechEd/liascript-slide-templates" target="_blank" rel="noopener">Repository on GitHub</a>
+  </div>
+  <nav>
+    <a href="#introduction">Introduction</a>
+    <a href="#overview_course">Overview Course</a>
+    <a href="#content_introduction">Content Introduction</a>
+    <a href="#concept_explanation">Concept Explanation</a>
+    <a href="#interactive_exercise">Interactive Exercise</a>
+    <a href="#simulation">Simulation</a>
+    <a href="#media">Media</a>
+    <a href="#application_transfer">Application Transfer</a>
+    <a href="#summary_recap">Summary Recap</a>
+  </nav>
+</header>
+<main>
+  <section class="demo">
+    <h2>Demo: Air Pressure – Otto von Guericke's Hemispheres <span>14 slides built from 11 templates and one content file</span></h2>
+    <div class="links">
+      <a class="btn" href="https://liascript.github.io/course/?https://raw.githubusercontent.com/OVGU-VET-TechEd/liascript-slide-templates/main/Demo_Session/Demo_Session.md" target="_blank" rel="noopener">Open in LiaScript</a>
+      <a class="src" href="https://github.com/OVGU-VET-TechEd/liascript-slide-templates/blob/main/Demo_Session/Demo_Session.content.txt" target="_blank" rel="noopener">Content file</a>
+      <a class="src" href="https://github.com/OVGU-VET-TechEd/liascript-slide-templates/blob/main/Demo_Session/Demo_Session.md" target="_blank" rel="noopener">Built session</a>
+    </div>
+  </section>
+    <section id="introduction">
+      <h2>Introduction <span>Opening slide of a course or session</span></h2>
+      <div class="grid">
+      <article class="card">
+        <h3>Variant 1</h3>
+        <p class="what">Opening slide with a large title image, welcome text, agenda and a prior-knowledge survey.</p>
+        <p class="use">First slide of a course or session. Welcomes learners with an image and checks prior knowledge.</p>
+        <div class="links">
+          <a class="btn" href="https://liascript.github.io/course/?https://raw.githubusercontent.com/OVGU-VET-TechEd/liascript-slide-templates/main/Templates/Introduction_Template_1.md" target="_blank" rel="noopener">Open in LiaScript</a>
+          <a class="src" href="https://github.com/OVGU-VET-TechEd/liascript-slide-templates/blob/main/Templates/Introduction_Template_1.md" target="_blank" rel="noopener">Source</a>
+        </div>
+      </article>
+      <article class="card">
+        <h3>Variant 2</h3>
+        <p class="what">Opening slide with bullet points only (who, what, why, how) and a one-word association survey.</p>
+        <p class="use">Lean opening without images. Four bullets appear one after another, then every learner names one association.</p>
+        <div class="links">
+          <a class="btn" href="https://liascript.github.io/course/?https://raw.githubusercontent.com/OVGU-VET-TechEd/liascript-slide-templates/main/Templates/Introduction_Template_2.md" target="_blank" rel="noopener">Open in LiaScript</a>
+          <a class="src" href="https://github.com/OVGU-VET-TechEd/liascript-slide-templates/blob/main/Templates/Introduction_Template_2.md" target="_blank" rel="noopener">Source</a>
+        </div>
+      </article>
+      <article class="card">
+        <h3>Variant 3</h3>
+        <p class="what">Opening slide that starts from a real-life case, lets learners predict the outcome and then reveals it.</p>
+        <p class="use">Hook the audience with a real event (history, news, accident, product, everyday situation) before naming the topic.</p>
+        <div class="links">
+          <a class="btn" href="https://liascript.github.io/course/?https://raw.githubusercontent.com/OVGU-VET-TechEd/liascript-slide-templates/main/Templates/Introduction_Template_3.md" target="_blank" rel="noopener">Open in LiaScript</a>
+          <a class="src" href="https://github.com/OVGU-VET-TechEd/liascript-slide-templates/blob/main/Templates/Introduction_Template_3.md" target="_blank" rel="noopener">Source</a>
+        </div>
+      </article>
+      </div>
+    </section>
+    <section id="overview_course">
+      <h2>Overview Course <span>What to expect and the learning objectives</span></h2>
+      <div class="grid">
+      <article class="card">
+        <h3>Variant 1</h3>
+        <p class="what">Course overview as a module table plus learning objectives with Bloom verbs and an interest survey.</p>
+        <p class="use">Show the structure of the course (what, how, how long) and the learning objectives in classic form.</p>
+        <div class="links">
+          <a class="btn" href="https://liascript.github.io/course/?https://raw.githubusercontent.com/OVGU-VET-TechEd/liascript-slide-templates/main/Templates/Overview_Course_Template_1.md" target="_blank" rel="noopener">Open in LiaScript</a>
+          <a class="src" href="https://github.com/OVGU-VET-TechEd/liascript-slide-templates/blob/main/Templates/Overview_Course_Template_1.md" target="_blank" rel="noopener">Source</a>
+        </div>
+      </article>
+      <article class="card">
+        <h3>Variant 2</h3>
+        <p class="what">Course overview as a visual roadmap (Mermaid) with objectives grouped into know, can do and value.</p>
+        <p class="use">Show the learning path as a roadmap and group the objectives into knowledge, skills and attitudes.</p>
+        <div class="links">
+          <a class="btn" href="https://liascript.github.io/course/?https://raw.githubusercontent.com/OVGU-VET-TechEd/liascript-slide-templates/main/Templates/Overview_Course_Template_2.md" target="_blank" rel="noopener">Open in LiaScript</a>
+          <a class="src" href="https://github.com/OVGU-VET-TechEd/liascript-slide-templates/blob/main/Templates/Overview_Course_Template_2.md" target="_blank" rel="noopener">Source</a>
+        </div>
+      </article>
+      <article class="card">
+        <h3>Variant 3</h3>
+        <p class="what">Learner-centred overview with objectives, workload box and a prior-knowledge matrix survey.</p>
+        <p class="use">Present the objectives from the learner&#x27;s view and collect prior knowledge and expectations per objective.</p>
+        <div class="links">
+          <a class="btn" href="https://liascript.github.io/course/?https://raw.githubusercontent.com/OVGU-VET-TechEd/liascript-slide-templates/main/Templates/Overview_Course_Template_3.md" target="_blank" rel="noopener">Open in LiaScript</a>
+          <a class="src" href="https://github.com/OVGU-VET-TechEd/liascript-slide-templates/blob/main/Templates/Overview_Course_Template_3.md" target="_blank" rel="noopener">Source</a>
+        </div>
+      </article>
+      </div>
+    </section>
+    <section id="content_introduction">
+      <h2>Content Introduction <span>Start of a new content block</span></h2>
+      <div class="grid">
+      <article class="card">
+        <h3>Variant 1</h3>
+        <p class="what">Start of a content block with a picture next to an intro text, a key message and an activation question.</p>
+        <p class="use">Open a new topic with a picture and a short text, then activate prior knowledge with one typed answer.</p>
+        <div class="links">
+          <a class="btn" href="https://liascript.github.io/course/?https://raw.githubusercontent.com/OVGU-VET-TechEd/liascript-slide-templates/main/Templates/Content_Introduction_Template_1.md" target="_blank" rel="noopener">Open in LiaScript</a>
+          <a class="src" href="https://github.com/OVGU-VET-TechEd/liascript-slide-templates/blob/main/Templates/Content_Introduction_Template_1.md" target="_blank" rel="noopener">Source</a>
+        </div>
+      </article>
+      <article class="card">
+        <h3>Variant 2</h3>
+        <p class="what">Start of a content block with a guiding question, four bullets revealed step by step and a prior-knowledge survey.</p>
+        <p class="use">Text-only opener for a new topic. A guiding question frames four aspects the block will cover.</p>
+        <div class="links">
+          <a class="btn" href="https://liascript.github.io/course/?https://raw.githubusercontent.com/OVGU-VET-TechEd/liascript-slide-templates/main/Templates/Content_Introduction_Template_2.md" target="_blank" rel="noopener">Open in LiaScript</a>
+          <a class="src" href="https://github.com/OVGU-VET-TechEd/liascript-slide-templates/blob/main/Templates/Content_Introduction_Template_2.md" target="_blank" rel="noopener">Source</a>
+        </div>
+      </article>
+      <article class="card">
+        <h3>Variant 3</h3>
+        <p class="what">Start of a content block from a real-life example using Predict, Observe, Explain.</p>
+        <p class="use">Introduce a concept through a real scenario. Learners predict, see the observation, then explain it in their words.</p>
+        <div class="links">
+          <a class="btn" href="https://liascript.github.io/course/?https://raw.githubusercontent.com/OVGU-VET-TechEd/liascript-slide-templates/main/Templates/Content_Introduction_Template_3.md" target="_blank" rel="noopener">Open in LiaScript</a>
+          <a class="src" href="https://github.com/OVGU-VET-TechEd/liascript-slide-templates/blob/main/Templates/Content_Introduction_Template_3.md" target="_blank" rel="noopener">Source</a>
+        </div>
+      </article>
+      </div>
+    </section>
+    <section id="concept_explanation">
+      <h2>Concept Explanation <span>Explain a concept, a contrast or a process</span></h2>
+      <div class="grid">
+      <article class="card">
+        <h3>Variant 1</h3>
+        <p class="what">Concept explained by definition, formula with symbol table, worked example and a numeric practice task.</p>
+        <p class="use">Explain a quantitative concept: definition, formula, symbols, worked example, then one calculation by the learners.</p>
+        <div class="links">
+          <a class="btn" href="https://liascript.github.io/course/?https://raw.githubusercontent.com/OVGU-VET-TechEd/liascript-slide-templates/main/Templates/Concept_Explanation_Template_1.md" target="_blank" rel="noopener">Open in LiaScript</a>
+          <a class="src" href="https://github.com/OVGU-VET-TechEd/liascript-slide-templates/blob/main/Templates/Concept_Explanation_Template_1.md" target="_blank" rel="noopener">Source</a>
+        </div>
+      </article>
+      <article class="card">
+        <h3>Variant 2</h3>
+        <p class="what">Concept explained by contrast with a comparison table, a typical misconception and a classification quiz.</p>
+        <p class="use">Explain two related concepts by comparing them on four criteria and clearing up a common misconception.</p>
+        <div class="links">
+          <a class="btn" href="https://liascript.github.io/course/?https://raw.githubusercontent.com/OVGU-VET-TechEd/liascript-slide-templates/main/Templates/Concept_Explanation_Template_2.md" target="_blank" rel="noopener">Open in LiaScript</a>
+          <a class="src" href="https://github.com/OVGU-VET-TechEd/liascript-slide-templates/blob/main/Templates/Concept_Explanation_Template_2.md" target="_blank" rel="noopener">Source</a>
+        </div>
+      </article>
+      <article class="card">
+        <h3>Variant 3</h3>
+        <p class="what">Process or structure explained with a Mermaid diagram, narrated steps and a drag and drop ordering task.</p>
+        <p class="use">Explain a process (workflow, cycle, algorithm, causal chain) with a diagram and one narrated step at a time.</p>
+        <div class="links">
+          <a class="btn" href="https://liascript.github.io/course/?https://raw.githubusercontent.com/OVGU-VET-TechEd/liascript-slide-templates/main/Templates/Concept_Explanation_Template_3.md" target="_blank" rel="noopener">Open in LiaScript</a>
+          <a class="src" href="https://github.com/OVGU-VET-TechEd/liascript-slide-templates/blob/main/Templates/Concept_Explanation_Template_3.md" target="_blank" rel="noopener">Source</a>
+        </div>
+      </article>
+      </div>
+    </section>
+    <section id="interactive_exercise">
+      <h2>Interactive Exercise <span>Practise with quizzes and calculations</span></h2>
+      <div class="grid">
+      <article class="card">
+        <h3>Variant 1</h3>
+        <p class="what">Self-check slide with a single-choice, a multiple-choice and a text quiz, each with hint and feedback.</p>
+        <p class="use">Quick knowledge check after an explanation. Three quiz types, one question each, revealed one by one.</p>
+        <div class="links">
+          <a class="btn" href="https://liascript.github.io/course/?https://raw.githubusercontent.com/OVGU-VET-TechEd/liascript-slide-templates/main/Templates/Interactive_Exercise_Template_1.md" target="_blank" rel="noopener">Open in LiaScript</a>
+          <a class="src" href="https://github.com/OVGU-VET-TechEd/liascript-slide-templates/blob/main/Templates/Interactive_Exercise_Template_1.md" target="_blank" rel="noopener">Source</a>
+        </div>
+      </article>
+      <article class="card">
+        <h3>Variant 2</h3>
+        <p class="what">Practice slide with a gap text (selection, typed and drag and drop gaps) and a true or false matrix.</p>
+        <p class="use">Practise terms and facts in context. A gap text first, then four true/false statements in one matrix.</p>
+        <div class="links">
+          <a class="btn" href="https://liascript.github.io/course/?https://raw.githubusercontent.com/OVGU-VET-TechEd/liascript-slide-templates/main/Templates/Interactive_Exercise_Template_2.md" target="_blank" rel="noopener">Open in LiaScript</a>
+          <a class="src" href="https://github.com/OVGU-VET-TechEd/liascript-slide-templates/blob/main/Templates/Interactive_Exercise_Template_2.md" target="_blank" rel="noopener">Source</a>
+        </div>
+      </article>
+      <article class="card">
+        <h3>Variant 3</h3>
+        <p class="what">Calculation task with given values, a numeric answer check with tolerance, tiered hints, a worked solution and a reflection.</p>
+        <p class="use">Practise a calculation. Rounding differences and a decimal comma are accepted, hints appear after a wrong try.</p>
+        <div class="links">
+          <a class="btn" href="https://liascript.github.io/course/?https://raw.githubusercontent.com/OVGU-VET-TechEd/liascript-slide-templates/main/Templates/Interactive_Exercise_Template_3.md" target="_blank" rel="noopener">Open in LiaScript</a>
+          <a class="src" href="https://github.com/OVGU-VET-TechEd/liascript-slide-templates/blob/main/Templates/Interactive_Exercise_Template_3.md" target="_blank" rel="noopener">Source</a>
+        </div>
+      </article>
+      </div>
+    </section>
+    <section id="simulation">
+      <h2>Simulation <span>Explore with sliders, JavaScript and Python</span></h2>
+      <div class="grid">
+      <article class="card">
+        <h3>Variant 1</h3>
+        <p class="what">Parameter simulation with two sliders, a live result table and bar, framed by a prediction and guiding questions.</p>
+        <p class="use">Learners explore a formula or model by moving two sliders. No import needed, runs in every LiaScript viewer.</p>
+        <div class="links">
+          <a class="btn" href="https://liascript.github.io/course/?https://raw.githubusercontent.com/OVGU-VET-TechEd/liascript-slide-templates/main/Templates/Simulation_Template_1.md" target="_blank" rel="noopener">Open in LiaScript</a>
+          <a class="src" href="https://github.com/OVGU-VET-TechEd/liascript-slide-templates/blob/main/Templates/Simulation_Template_1.md" target="_blank" rel="noopener">Source</a>
+        </div>
+      </article>
+      <article class="card">
+        <h3>Variant 2</h3>
+        <p class="what">Executable and editable JavaScript that prints a table of values, with a read-off quiz and Basis and Extra tasks.</p>
+        <p class="use">Learners run and change a small JavaScript program that prints a table of values. No import needed.</p>
+        <div class="links">
+          <a class="btn" href="https://liascript.github.io/course/?https://raw.githubusercontent.com/OVGU-VET-TechEd/liascript-slide-templates/main/Templates/Simulation_Template_2.md" target="_blank" rel="noopener">Open in LiaScript</a>
+          <a class="src" href="https://github.com/OVGU-VET-TechEd/liascript-slide-templates/blob/main/Templates/Simulation_Template_2.md" target="_blank" rel="noopener">Source</a>
+        </div>
+      </article>
+      <article class="card">
+        <h3>Variant 3</h3>
+        <p class="what">Executable Python in the browser (Pyodide) with an exploration task and a find-the-error program with tiered hints.</p>
+        <p class="use">Learners run Python in the browser: first explore a working program, then repair a program with one error.</p>
+        <div class="links">
+          <a class="btn" href="https://liascript.github.io/course/?https://raw.githubusercontent.com/OVGU-VET-TechEd/liascript-slide-templates/main/Templates/Simulation_Template_3.md" target="_blank" rel="noopener">Open in LiaScript</a>
+          <a class="src" href="https://github.com/OVGU-VET-TechEd/liascript-slide-templates/blob/main/Templates/Simulation_Template_3.md" target="_blank" rel="noopener">Source</a>
+        </div>
+      </article>
+      </div>
+    </section>
+    <section id="media">
+      <h2>Media <span>Use video, figures and external simulations actively</span></h2>
+      <div class="grid">
+      <article class="card">
+        <h3>Variant 1</h3>
+        <p class="what">Video slide with watch-for questions before viewing and two check questions afterwards.</p>
+        <p class="use">Use a video actively: learners know what to look for, watch, and then answer two questions about it.</p>
+        <div class="links">
+          <a class="btn" href="https://liascript.github.io/course/?https://raw.githubusercontent.com/OVGU-VET-TechEd/liascript-slide-templates/main/Templates/Media_Template_1.md" target="_blank" rel="noopener">Open in LiaScript</a>
+          <a class="src" href="https://github.com/OVGU-VET-TechEd/liascript-slide-templates/blob/main/Templates/Media_Template_1.md" target="_blank" rel="noopener">Source</a>
+        </div>
+      </article>
+      <article class="card">
+        <h3>Variant 2</h3>
+        <p class="what">Annotated figure with numbered hotspots explained step by step and a drag and drop labelling task.</p>
+        <p class="use">Explain the parts of a figure (device, diagram, photo, map) with numbered markers, then let learners label it.</p>
+        <div class="links">
+          <a class="btn" href="https://liascript.github.io/course/?https://raw.githubusercontent.com/OVGU-VET-TechEd/liascript-slide-templates/main/Templates/Media_Template_2.md" target="_blank" rel="noopener">Open in LiaScript</a>
+          <a class="src" href="https://github.com/OVGU-VET-TechEd/liascript-slide-templates/blob/main/Templates/Media_Template_2.md" target="_blank" rel="noopener">Source</a>
+        </div>
+      </article>
+      <article class="card">
+        <h3>Variant 3</h3>
+        <p class="what">Embedded external simulation (PhET, GeoGebra, H5P) with guided tasks, a measured value check and a conclusion.</p>
+        <p class="use">Guide learners through an external interactive simulation with concrete tasks instead of free play.</p>
+        <div class="links">
+          <a class="btn" href="https://liascript.github.io/course/?https://raw.githubusercontent.com/OVGU-VET-TechEd/liascript-slide-templates/main/Templates/Media_Template_3.md" target="_blank" rel="noopener">Open in LiaScript</a>
+          <a class="src" href="https://github.com/OVGU-VET-TechEd/liascript-slide-templates/blob/main/Templates/Media_Template_3.md" target="_blank" rel="noopener">Source</a>
+        </div>
+      </article>
+      </div>
+    </section>
+    <section id="application_transfer">
+      <h2>Application Transfer <span>Apply knowledge: cases, mistakes, discussion</span></h2>
+      <div class="grid">
+      <article class="card">
+        <h3>Variant 1</h3>
+        <p class="what">Case analysis with a real case, a data table and three guiding questions with open answers and model answers.</p>
+        <p class="use">Apply the content to a real case. Learners answer three guiding questions in writing, then compare with model answers.</p>
+        <div class="links">
+          <a class="btn" href="https://liascript.github.io/course/?https://raw.githubusercontent.com/OVGU-VET-TechEd/liascript-slide-templates/main/Templates/Application_Transfer_Template_1.md" target="_blank" rel="noopener">Open in LiaScript</a>
+          <a class="src" href="https://github.com/OVGU-VET-TechEd/liascript-slide-templates/blob/main/Templates/Application_Transfer_Template_1.md" target="_blank" rel="noopener">Source</a>
+        </div>
+      </article>
+      <article class="card">
+        <h3>Variant 2</h3>
+        <p class="what">Find-the-mistake task with a four-step solution, a quiz to locate the error and a check of the corrected value.</p>
+        <p class="use">Train critical reading. A solution with exactly one wrong step is shown; learners locate it and give the correct result.</p>
+        <div class="links">
+          <a class="btn" href="https://liascript.github.io/course/?https://raw.githubusercontent.com/OVGU-VET-TechEd/liascript-slide-templates/main/Templates/Application_Transfer_Template_2.md" target="_blank" rel="noopener">Open in LiaScript</a>
+          <a class="src" href="https://github.com/OVGU-VET-TechEd/liascript-slide-templates/blob/main/Templates/Application_Transfer_Template_2.md" target="_blank" rel="noopener">Source</a>
+        </div>
+      </article>
+      <article class="card">
+        <h3>Variant 3</h3>
+        <p class="what">Think-Pair-Share discussion of a dilemma with an opinion vote before and after and an argument collection.</p>
+        <p class="use">Discuss an open question or dilemma in class. The two votes show whether the discussion changed opinions.</p>
+        <div class="links">
+          <a class="btn" href="https://liascript.github.io/course/?https://raw.githubusercontent.com/OVGU-VET-TechEd/liascript-slide-templates/main/Templates/Application_Transfer_Template_3.md" target="_blank" rel="noopener">Open in LiaScript</a>
+          <a class="src" href="https://github.com/OVGU-VET-TechEd/liascript-slide-templates/blob/main/Templates/Application_Transfer_Template_3.md" target="_blank" rel="noopener">Source</a>
+        </div>
+      </article>
+      </div>
+    </section>
+    <section id="summary_recap">
+      <h2>Summary Recap <span>Close the session: recap, exit ticket, reflection</span></h2>
+      <div class="grid">
+      <article class="card">
+        <h3>Variant 1</h3>
+        <p class="what">Closing slide with key takeaways revealed one by one, a remember box, a recap quiz and an outlook.</p>
+        <p class="use">Close a session: repeat the key points, anchor one core idea, check it once, point to the next session.</p>
+        <div class="links">
+          <a class="btn" href="https://liascript.github.io/course/?https://raw.githubusercontent.com/OVGU-VET-TechEd/liascript-slide-templates/main/Templates/Summary_Recap_Template_1.md" target="_blank" rel="noopener">Open in LiaScript</a>
+          <a class="src" href="https://github.com/OVGU-VET-TechEd/liascript-slide-templates/blob/main/Templates/Summary_Recap_Template_1.md" target="_blank" rel="noopener">Source</a>
+        </div>
+      </article>
+      <article class="card">
+        <h3>Variant 2</h3>
+        <p class="what">Exit ticket with three mixed quiz items, one per session objective.</p>
+        <p class="use">Short exit ticket at the end of a session. One question per objective from the overview slide.</p>
+        <div class="links">
+          <a class="btn" href="https://liascript.github.io/course/?https://raw.githubusercontent.com/OVGU-VET-TechEd/liascript-slide-templates/main/Templates/Summary_Recap_Template_2.md" target="_blank" rel="noopener">Open in LiaScript</a>
+          <a class="src" href="https://github.com/OVGU-VET-TechEd/liascript-slide-templates/blob/main/Templates/Summary_Recap_Template_2.md" target="_blank" rel="noopener">Source</a>
+        </div>
+      </article>
+      <article class="card">
+        <h3>Variant 3</h3>
+        <p class="what">Closing with reflection prompts, a can-do checklist, a feedback matrix survey and a teaser for the next session.</p>
+        <p class="use">End a session with personal reflection, self-assessment and anonymous feedback, then build curiosity for next time.</p>
+        <div class="links">
+          <a class="btn" href="https://liascript.github.io/course/?https://raw.githubusercontent.com/OVGU-VET-TechEd/liascript-slide-templates/main/Templates/Summary_Recap_Template_3.md" target="_blank" rel="noopener">Open in LiaScript</a>
+          <a class="src" href="https://github.com/OVGU-VET-TechEd/liascript-slide-templates/blob/main/Templates/Summary_Recap_Template_3.md" target="_blank" rel="noopener">Source</a>
+        </div>
+      </article>
+      </div>
+    </section>
+</main>
+<footer>
+  <p>Otto-von-Guericke-Universität Magdeburg · Templates and content under CC BY 4.0, scripts under MIT ·
+     Based on ideas from <a href="https://github.com/LiaScript/teaching-agent">LiaScript/teaching-agent</a> and
+     <a href="https://github.com/LiaPress/python-marsmission-schule">LiaPress/python-marsmission-schule</a>.</p>
+</footer>
+</body>
+</html>
