@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="420" viewBox="0 0 600 420" role="img" aria-labelledby="t">
+  <title id="t">Mercury barometer: an inverted glass tube standing in a dish of mercury</title>
+  <rect width="600" height="420" fill="#f4f7fa"/>
+  <!-- dish with mercury -->
+  <path d="M160 320 L160 392 Q160 400 168 400 L432 400 Q440 400 440 392 L440 320" fill="none" stroke="#495057" stroke-width="4"/>
+  <rect x="162" y="350" width="276" height="48" fill="#9aa5b1"/>
+  <!-- glass tube: vacuum at the top, mercury column below -->
+  <rect x="280" y="42" width="40" height="66" fill="#ffffff"/>
+  <rect x="280" y="108" width="40" height="290" fill="#9aa5b1"/>
+  <path d="M280 380 L280 50 Q280 38 292 38 L308 38 Q320 38 320 50 L320 380" fill="none" stroke="#495057" stroke-width="4"/>
+  <!-- height of the column -->
+  <line x1="360" y1="108" x2="360" y2="350" stroke="#0b7285" stroke-width="2"/>
+  <path d="M352 118 L360 104 L368 118 M352 340 L360 354 L368 340" fill="none" stroke="#0b7285" stroke-width="2"/>
+  <line x1="324" y1="108" x2="372" y2="108" stroke="#0b7285" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="378" y="236" font-family="Arial, sans-serif" font-size="20" fill="#0b7285">≈ 760 mm</text>
+  <!-- air pressing on the open mercury surface -->
+  <g stroke="#c92a2a" stroke-width="3" fill="#c92a2a">
+    <line x1="200" y1="270" x2="200" y2="334"/><path d="M192 330 L200 346 L208 330 Z"/>
+    <line x1="240" y1="270" x2="240" y2="334"/><path d="M232 330 L240 346 L248 330 Z"/>
+    <line x1="400" y1="270" x2="400" y2="334"/><path d="M392 330 L400 346 L408 330 Z"/>
+  </g>
+  <text x="40" y="300" font-family="Arial, sans-serif" font-size="18" fill="#c92a2a">air pressure p₀</text>
+</svg>

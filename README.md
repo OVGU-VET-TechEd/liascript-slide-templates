@@ -1,0 +1,31 @@
+# LiaScript Slide Templates
+
+27 render-tested [LiaScript](https://liascript.github.io) slide templates in 9 families (introduction, course overview,
+content introduction, concept explanation, exercises, simulations, media, application/transfer, summary) plus tooling
+to build complete, interactive sessions from a plain-text content file – without writing LiaScript or code.
+
+- [`Templates/`](Templates/) – templates, conventions, `assemble.py` (skeleton / build), `validate.py`, render check
+- [`Demo_Session/`](Demo_Session/) – a 14-slide demo session on Otto von Guericke's Magdeburg hemispheres, built only
+  from [`Demo_Session.content.txt`](Demo_Session/Demo_Session.content.txt)
+
+**Open the demo in LiaScript:**
+https://liascript.github.io/course/?https://raw.githubusercontent.com/OVGU-VET-TechEd/liascript-slide-templates/main/Demo_Session/Demo_Session.md
+
+## Quick start
+
+```bash
+cd Templates
+python3 assemble.py skeleton ../my_session.txt Introduction_Template_3.md Concept_Explanation_Template_1.md Summary_Recap_Template_2.md
+# edit my_session.txt
+python3 assemble.py build ../my_session.txt ../my_session.md
+```
+
+See [`Templates/README.md`](Templates/README.md) and [`Templates/CONVENTIONS.md`](Templates/CONVENTIONS.md).
+
+Based on ideas and patterns from [LiaScript/teaching-agent](https://github.com/LiaScript/teaching-agent) and
+[LiaPress/python-marsmission-schule](https://github.com/LiaPress/python-marsmission-schule).
+
+## License
+
+Templates, documentation and demo content: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+Scripts (`*.py`, `*.mjs`): MIT. Images in the demo are linked from Wikimedia Commons under their own licences (see captions).

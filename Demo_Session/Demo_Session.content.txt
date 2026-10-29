@@ -1,0 +1,278 @@
+# Demo session: Air pressure – Otto von Guericke's hemispheres
+# Build:  python3 ../Templates/assemble.py build Demo_Session.content.txt Demo_Session.md
+# Facts: Magdeburg hemispheres (Wikipedia), images from Wikimedia Commons (licences in the captions).
+
+[course]
+AUTHOR = Hannes Tegelbeckers
+EMAIL = hannes.tegelbeckers@ovgu.de
+COURSE-TITLE = Air Pressure – Otto von Guericke's Hemispheres
+COURSE-SUBTITLE = Demo session built from the LiaScript slide templates · 11 templates, 14 slides
+COURSE-DESCRIPTION = Interactive demo session on air pressure, built only from content and the slide templates.
+VERSION = 0.1.0
+LANGUAGE = en
+NARRATOR = US English Female
+
+
+[Introduction_Template_3.md]
+SLIDE-TITLE = Thirty Horses Against Nothing
+NARRATION-0 = Regensburg, the eighth of May 1654. In front of the emperor, Otto von Guericke, the mayor of Magdeburg, presents two copper half-spheres.
+IMAGE-ALT = Engraving of two teams of horses pulling at a pair of joined metal hemispheres
+IMAGE-PATH = https://commons.wikimedia.org/wiki/Special:FilePath/Magdeburg.jpg?width=960
+IMAGE-CAPTION = Engraving by Gaspar Schott, 1657 · public domain · Wikimedia Commons
+CASE-TEXT = Guericke puts the two hemispheres together and pumps the air out with the air pump he has invented. Then two teams of fifteen horses are hitched to the hemispheres and driven apart.
+NARRATION-1 = Here is the question that will guide us today.
+GUIDING-QUESTION = How can "nothing" – an empty space – hold the hemispheres together so strongly?
+NARRATION-2 = What do you think happened?
+PREDICT-QUESTION = What happened when the horses pulled?
+PREDICT-CORRECT = The horses could not separate the hemispheres
+PREDICT-WRONG-1 = The hemispheres flew apart at once
+PREDICT-WRONG-2 = The hemispheres were crushed flat
+PREDICT-HINT = Think about what presses on the hemispheres from the outside.
+PREDICT-FEEDBACK = Right – thirty horses were not strong enough.
+NARRATION-3 = Then Guericke opened a small valve, and the hemispheres simply fell apart.
+OUTCOME = Only when Guericke opened the valve and let air back in did the hemispheres come apart – by hand. Today you find out which force held them together.
+
+
+[Overview_Course_Template_2.md]
+SLIDE-TITLE = Today's Path
+NARRATION-0 = Today we follow Guericke's experiment in five steps.
+MODULE-1 = Air has weight
+MODULE-2 = Pressure p = F/A
+MODULE-3 = Hemisphere force
+MODULE-4 = Measuring pressure
+MODULE-5 = Apply and check
+MILESTONE = Exit ticket
+NARRATION-1 = Along this path you gain three kinds of outcomes.
+KNOW-1 = Define pressure as force per area
+KNOW-2 = Name typical air pressure values
+CAN-1 = Calculate forces caused by air pressure
+CAN-2 = Explain how a barometer works
+VALUE-1 = Appreciate experiments as evidence
+VALUE-2 = Check results for plausibility
+NARRATION-2 = Can you read the path?
+ORDER-QUESTION = Which step comes directly before "Measuring pressure"?
+ORDER-CORRECT = Hemisphere force
+ORDER-WRONG-1 = Air has weight
+ORDER-WRONG-2 = Apply and check
+ORDER-HINT = Follow the arrows from left to right.
+ORDER-FEEDBACK = First we calculate the force on the hemispheres, then we see how air pressure itself is measured.
+
+
+[Content_Introduction_Template_1.md]
+SLIDE-TITLE = Living at the Bottom of an Ocean of Air
+NARRATION-0 = We do not feel it, but we live at the bottom of an ocean of air that is many kilometres deep.
+IMAGE-ALT = Original Magdeburg hemispheres and Guericke's air pump in a museum showcase
+IMAGE-PATH = https://commons.wikimedia.org/wiki/Special:FilePath/Magedurger_Halbkugeln_Luftpumpe_Deutsches_Museum.jpg?width=640
+IMAGE-CAPTION = Deutsches Museum Munich · Photo: LepoRello, CC BY-SA 3.0, Wikimedia Commons
+INTRO-TEXT = Air has weight. The air column above every square metre of the Earth's surface weighs about **10 tonnes**. This weight presses on everything around us – from all sides. Guericke's hemispheres made this invisible pressure visible.
+NARRATION-1 = Keep one idea in mind.
+KEY-MESSAGE = Air pressure is caused by the weight of the air above us: at sea level about 101 325 Pa.
+NARRATION-2 = A quick check before we start.
+ACTIVATION-QUESTION = What is the SI unit of pressure?
+ACTIVATION-ANSWER = pascal
+ACTIVATION-HINT = It is named after the French scientist Blaise Pascal.
+ACTIVATION-FEEDBACK = Correct: 1 Pa = 1 N/m².
+
+
+[Concept_Explanation_Template_1.md]
+SLIDE-TITLE = Pressure Is Force per Area
+NARRATION-0 = Pressure tells us how strongly a force is spread over a surface.
+DEFINITION = Pressure is the force acting perpendicular on a surface, divided by the area of that surface.
+NARRATION-1 = So the same pressure produces a larger force on a larger area.
+FORMULA = p = \frac{F}{A} \qquad \Leftrightarrow \qquad F = p \cdot A
+SYMBOL-1 = p
+MEANING-1 = pressure
+UNIT-1 = Pa = N/m²
+SYMBOL-2 = F
+MEANING-2 = force perpendicular to the surface
+UNIT-2 = N
+SYMBOL-3 = A
+MEANING-3 = area
+UNIT-3 = m²
+EX-TITLE = Worked Example: Your Hand
+NARRATION-EX-0 = How strongly does the air press on your open hand?
+EX-PROBLEM = An open hand has an area of about 0.01 m². How large is the force of the air on it (p₀ = 101 325 Pa)?
+NARRATION-EX-1 = First, we solve the formula for the force.
+EX-STEP-1 = $F = p_0 \cdot A$
+NARRATION-EX-2 = Then we insert the values.
+EX-STEP-2 = $F = 101\,325\ \text{Pa} \cdot 0.01\ \text{m}^2$
+NARRATION-EX-3 = That is about the weight of a hundred kilograms – and you do not feel it, because the air presses from both sides.
+EX-STEP-3 = $F \approx 1013\ \text{N}$ – the weight of about 100 kg
+NARRATION-EX-4 = Now it is your turn.
+TASK = A table top measures 1.2 m × 0.8 m. How large is the force of the air on it, in kN?
+RESULT-VALUE = 97.27
+HINT-1 = First calculate the area A of the table top.
+HINT-2 = F = 101 325 Pa · 0.96 m², then divide by 1000.
+SOLUTION = A = 1.2 m · 0.8 m = 0.96 m² and F = 101 325 Pa · 0.96 m² ≈ 97 272 N ≈ 97.3 kN. The table does not break, because the air pushes from below with the same force.
+
+
+[Simulation_Template_1.md]
+SLIDE-TITLE = How Strong Is the Vacuum?
+NARRATION-0 = Before you try the model, make a prediction.
+PREDICT-QUESTION = Guericke doubles the radius of his hemispheres. How does the force holding them together change?
+PREDICT-WRONG-1 = It doubles
+PREDICT-CORRECT = It becomes four times as large
+PREDICT-WRONG-2 = It stays the same
+PREDICT-HINT = The force acts on the circle at the joint: A = π r².
+NARRATION-1 = Now change the radius and the quality of the vacuum and watch the force.
+PARAM-1-LABEL = Radius r in cm
+PARAM-1-MIN = 5
+PARAM-1-MAX = 60
+PARAM-1-STEP = 1
+PARAM-1-START = 25
+PARAM-2-LABEL = Air removed in %
+PARAM-2-MIN = 0
+PARAM-2-MAX = 100
+PARAM-2-STEP = 5
+PARAM-2-START = 100
+MODEL = 101325 * (p2 / 100) * Math.PI * (p1 / 100) ** 2 / 1000
+RESULT-LABEL = Force F
+RESULT-UNIT = kN
+RESULT-DIGITS = 1
+NARRATION-2 = Start with Guericke's original hemispheres.
+EXPLORE-1 = Set r = 25 cm and 100 %. This is the size of Guericke's hemispheres. How large is F, and how many tonnes could this force lift?
+NARRATION-3 = Guericke's pump was not perfect.
+EXPLORE-2 = Keep r = 25 cm and remove only half of the air. What happens to the force? Then double the radius.
+KEY-MESSAGE = The force grows in proportion to the pressure difference and with the square of the radius.
+
+
+[Media_Template_2.md]
+SLIDE-TITLE = How Do We Measure Air Pressure?
+NARRATION-0 = In 1643 Evangelista Torricelli built the first barometer. It has three main parts.
+IMAGE-ALT = Mercury barometer: an inverted glass tube standing in a dish of mercury, about 760 mm high
+IMAGE-PATH = assets/barometer.svg
+SPOT-1-X = 50%
+SPOT-1-Y = 18%
+SPOT-2-X = 50%
+SPOT-2-Y = 55%
+SPOT-3-X = 32%
+SPOT-3-Y = 89%
+NARRATION-1 = At the top of the closed tube there is a vacuum.
+PART-1 = Vacuum
+PART-TEXT-1 = Empty space – nothing presses on the mercury from above.
+NARRATION-2 = Below it stands a column of mercury.
+PART-2 = Mercury column
+PART-TEXT-2 = Its height of about 760 mm shows the air pressure: the higher the column, the higher the pressure.
+NARRATION-3 = And at the bottom, the air presses on the open dish.
+PART-3 = Mercury dish
+PART-TEXT-3 = Here the air presses on the open mercury surface and holds the column up.
+LABEL-TITLE = Label the Barometer
+NARRATION-LABEL-0 = Now drag the names to the right numbers.
+
+
+[Media_Template_3.md]
+SLIDE-TITLE = Experiment: Pressure in Air and Water
+NARRATION-0 = In this simulation you measure the pressure above and below a water surface yourself.
+EMBED-URL = https://phet.colorado.edu/sims/html/under-pressure/latest/under-pressure_en.html
+EMBED-TITLE = PhET Under Pressure, University of Colorado Boulder, CC BY 4.0
+NARRATION-1 = First, get to know the controls.
+TASK-1 = Open the first screen, switch the atmosphere on and move the pressure gauge from the air down to the bottom of the pool.
+NARRATION-2 = Now measure one value exactly.
+TASK-2 = With the atmosphere on, place the gauge exactly at the water surface. Which pressure does it show in kPa?
+MEASURE-ANSWER = 101.3
+MEASURE-HINT = Place the centre of the gauge exactly on the water surface.
+MEASURE-FEEDBACK = About 101.3 kPa – the weight of the air column above the pool.
+NARRATION-3 = What do you conclude?
+CONCLUSION-QUESTION = Switch the atmosphere off and on again. How does this change the pressure at the bottom of the pool, and why?
+
+
+[Interactive_Exercise_Template_2.md]
+SLIDE-TITLE = Air Pressure in Numbers
+NARRATION-0 = Complete the text. Choose, type or drag the missing words.
+GAP-TEXT-1 = At sea level the air pressure is about
+GAP-1-CORRECT = 1013 hPa
+GAP-1-WRONG-1 = 101 hPa
+GAP-1-WRONG-2 = 10 hPa
+GAP-TEXT-2 = . One bar equals
+GAP-2-ANSWER = 100
+GAP-TEXT-3 = kPa, and with increasing altitude the air pressure
+GAP-3-CORRECT = decreases
+GAP-3-DISTRACTOR = increases
+GAP-TEXT-4 = .
+GAP-HINT = Weather maps show values around 1000 hPa, and 1 hPa = 100 Pa.
+NARRATION-1 = Now decide: true or false?
+STATEMENT-1 = The air presses on every square metre with a force of about 100 kN.
+STATEMENT-2 = Air pressure acts only downwards.
+STATEMENT-3 = Guericke's horses were working against the air outside, not against the vacuum inside.
+STATEMENT-4 = A vacuum inside the hemispheres pulls them together.
+TF-HINT = A vacuum cannot pull – only the air outside can push.
+TF-FEEDBACK = Air pressure acts in all directions. The hemispheres are pushed together from outside, because nothing pushes back from inside.
+
+
+[Application_Transfer_Template_2.md]
+SLIDE-TITLE = Spot the Mistake
+NARRATION-0 = A student calculated the force on Guericke's hemispheres. One of the four steps is wrong.
+PROBLEM = Calculate the force that holds the hemispheres together (diameter 50 cm, perfect vacuum inside, p₀ = 101 325 Pa), in kN.
+STEP-1 = $F = p_0 \cdot A$
+STEP-2 = $A = \pi r^2$
+STEP-3 = $A = \pi \cdot (0.50\ \text{m})^2 = 0.785\ \text{m}^2$
+STEP-4 = $F = 101\,325\ \text{Pa} \cdot 0.785\ \text{m}^2 \approx 79.6\ \text{kN}$
+NARRATION-1 = Which step is wrong?
+LOCATE-HINT = Compare the length used in step 3 with the data given in the task.
+LOCATE-FEEDBACK = Step 3 uses the diameter (0.50 m) instead of the radius (0.25 m), so the area – and the force – come out four times too large.
+NARRATION-2 = Now give the correct result.
+CORRECT-QUESTION = What is the correct force in kN?
+CORRECT-ANSWER = 19.9
+CORRECT-HINT = Repeat step 3 with r = 0.25 m.
+SOLUTION = r = 0.25 m, A = π · (0.25 m)² ≈ 0.196 m², F = 101 325 Pa · 0.196 m² ≈ 19.9 kN – about the weight of two tonnes.
+
+
+[Simulation_Template_3.md]
+SLIDE-TITLE = Air Pressure and Altitude
+NARRATION-0 = The higher we go, the less air lies above us. This program calculates the air pressure at different altitudes.
+CODE-INTRO = The program uses the barometric formula p = p₀ · e^(−h/H) with a scale height H of about 8.4 km.
+PY-CODE = """
+import math
+
+p0 = 101325     # pressure at sea level in Pa
+H = 8400        # scale height of the atmosphere in m
+
+for h in range(0, 11000, 1000):
+    p = p0 * math.exp(-h / H)
+    print(f"{h:6d} m: {p / 1000:6.1f} kPa")
+"""
+NARRATION-1 = Run the program and read the table.
+EXPLORE-TASK = At which altitude in the table (in m) does the pressure first drop below half of the sea-level value?
+EXPLORE-ANSWER = 6000
+EXPLORE-HINT = Half of 101.3 kPa is about 50.7 kPa.
+EXPLORE-FEEDBACK = At 6000 m the pressure is only 49.6 kPa – mountaineers feel this as "thin air".
+ERROR-TITLE = Find the Error
+NARRATION-ERR-0 = This program should print the same table, but it crashes.
+ERROR-TASK = Run the program, read the error message and repair the faulty line.
+PY-ERROR-CODE = """
+import math
+
+p0 = 101325
+H = 8400
+
+for h in range(0, 11000, 1000):
+    p = p0 * math.exp(-h / scale)
+    print(f"{h:6d} m: {p / 1000:6.1f} kPa")
+"""
+NARRATION-ERR-1 = Stuck? Open the hints one after another.
+HINT-1 = Read the last line of the error message: which name is unknown?
+HINT-2 = Line 7 uses a name that is never defined. Which variable holds the scale height?
+SOLUTION = `p = p0 * math.exp(-h / H)`
+
+
+[Summary_Recap_Template_2.md]
+SLIDE-TITLE = Exit Ticket
+NARRATION-0 = Before you leave, answer three short questions – one for each goal of today.
+OBJECTIVE-1 = Explain air pressure
+Q1-QUESTION = Why could the horses not pull the hemispheres apart?
+Q1-CORRECT = The air outside pressed them together
+Q1-WRONG-1 = The vacuum inside pulled them together
+Q1-WRONG-2 = The rims were glued together
+Q1-HINT = A vacuum cannot pull.
+NARRATION-1 = Second question – several answers can be right.
+OBJECTIVE-2 = Use pressure units
+Q2-QUESTION = Which values describe normal air pressure at sea level?
+Q2-CORRECT-1 = 1013 hPa
+Q2-WRONG-1 = 10 bar
+Q2-CORRECT-2 = 101.3 kPa
+Q2-HINT = 1 bar = 1000 hPa = 100 kPa.
+NARRATION-2 = And finally, calculate.
+OBJECTIVE-3 = Calculate forces
+Q3-QUESTION = Air pressure (101 325 Pa) acts on a window of 0.5 m². How large is the force in kN?
+Q3-ANSWER = 50.7
+Q3-HINT = F = p · A, then divide by 1000.
